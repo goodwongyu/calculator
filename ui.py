@@ -2,7 +2,7 @@
 
 from PyQt5.QtWidgets import (QApplication,QWidget,QPushButton,
                              QVBoxLayout,QMessageBox,QPlainTextEdit,
-                             QHBoxLayout,QlineEdit,QComboBox)
+                             QHBoxLayout,QLineEdit,QComboBox)
 from PyQt5.QtGui import QIcon
 from PyQt5 import QtCore
 
@@ -12,13 +12,13 @@ class View(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.le1=QlineEdit('0',self)
+        self.le1=QLineEdit('0',self)
         self.le1.setAlignment(QtCore.Qt.AlignRight)
 
-        self.le2=QlineEdit('0',self)
+        self.le2=QLineEdit('0',self)
         self.le2.setAlignment(QtCore.Qt.AlignRight)
 
-        self.cb=QcomboBox(self)
+        self.cb=QComboBox(self)
         self.cb.addItems(['+','-','*','/'])
 
         hbox_formular=QHBoxLayout()
